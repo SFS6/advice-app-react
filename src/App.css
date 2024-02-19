@@ -1,0 +1,75 @@
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/1512992.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.card {
+  background-color: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  box-shadow: 10px 10px 5px;
+  border-radius: 25px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.button {
+  border-radius: 25px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgba(255, 0, 157, 0.6);
+  cursor: pointer;
+  display: flex;
+  opacity: 1;
+  border: 2px solid rgba(255, 0, 157, 0.6);
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+}
+
+.button span {
+  color: darkred;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.button:hover {
+  transform: translateY(1px)
+}
+
+.button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@media only screen and (max-width:600px) {
+  .card {
+    width: 80%;
+    height: 30%;
+  }
+}
